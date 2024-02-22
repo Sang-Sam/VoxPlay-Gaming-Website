@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+	content="IE=edge">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/quiz.css">
+    <style>
+		body {
+		  font-family: Arial, sans-serif;
+		}
+		#question {
+		  margin-bottom: 20px;
+		}
+	  </style>
+</head>
+
+<body>
+	<div class="panel">
+		<h1><u>Play quiz and win</u></h1><br><br>
+		<div id="question"></div>
+		<div id="options"></div>
+		<button onclick="checkAnswer()">Next Question</button>
+		<div class="q" id="ques"></div>
+		<div class="o" id="opt"></div>
+		<button onclick="checkAns()" id="btn">SUBMIT</button>
+		<div id="score"></div>
+		<script src="scripts/quiz.js"></script>
+	</div>
+
+</body>
+
+</html>

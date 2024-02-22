@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Press Navigation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(images/main_back2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+    }
+    .center p{
+        font-size: 55px;
+        text-shadow: 30rgb(207, 80, 239) 1px 0 10px;
+    }
+    .center {
+      text-align: center;
+      margin-top : 250px;
+    }
+    .blink {
+        animation: blink 3s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+        0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="page1" class="center">
+    <p class="blink">Press <strong>ENTER</strong> to go to the gaming page...</p>
+  </div>
+
+  <script>
+    document.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    window.location.href = 'gaming.html';
+  }
+});
+
+  </script>
+
+</body>
+</html>
